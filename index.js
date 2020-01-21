@@ -1,15 +1,18 @@
 import { write } from "fs";
 
 // Code your solutions in this file
-let name = ["Lisa", "Kaitlin", "Jan"];
-
-function writeCards(name) {
-
+function writeCards(name,eventName) {
   for (let i = 0; i < name.length; i++) {
-    console.log(`"Thank you, ${name[i]} for the wonderful surprise gift!"`);
+    console.log(`Thank you, ${name[i]}, for the wonderful ${eventName} gift!`);
+  
+  name[i]=(`Thank you, ${name[i]}, for the wonderful ${eventName} gift!`);
   }
+
 return name;}
-writeCards(names);
+let name = ( [ 'Lisa', 'Kaitlin', 'Jan' ], 'surprise'); 
+let eventName = "surprise"; 
+
+writeCards(names,eventName);
 
 function countDown() {
     let i=0; 
