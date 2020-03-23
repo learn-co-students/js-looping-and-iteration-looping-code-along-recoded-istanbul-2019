@@ -5,7 +5,7 @@ let occasion = 'birthday';
 
 function writeCards(people,occasion)
 {
-    let thankYouMessages;
+    let thankYouMessages = [];
     for(let i = 0; i<people.length; i++){
         thankYouMessages[i] = `Thank you, ${people[i]}, for the wonderful ${occasion} gift!`;
     }
