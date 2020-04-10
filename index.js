@@ -1,28 +1,21 @@
 // Code your solutions in this file
- const cards = ["Lisa", "Kaitlin", "Jan"] [cards(3)]
+const cards1 = ["Lisa", "Kaitlin", "Jan"] 
  
-function writeCards(cards) {
-
+function writeCards(cards, eventName) {
+  let myMessages = []
   for (let i = 0; i < cards.length; i++) {
-  
-    `Thank you ${cards[i]} for the wonderful birthday gift!`
-  
+    myMessages.push(`Thank you, ${cards[i]}, for the wonderful ${eventName} gift!`)
   }
-  return cards 
- 
-  
-
-
-
-
-    /* function countDown (["Ayse", "Zeynep", "Cansu"], "birthday");
-    for (let i = 0, i < countDown.length; i++) {
-        console.log(`Thank you {countDown[i]} for the wonderful birthday gift!`);
-    } */
-
-let countDown = 20;
-while (countDown >= 0) {
-    console.log(countDown--)
+  return myMessages     
 }
-    
+let returnValue = writeCards(cards1, "birthday")
+console.log(returnValue)
+writeCards(["Tayfun", "Zeynep"], "graduation", "amazing")
+writeCards(["Ali", "Ayse"], "wedding", "awesome")
+
+function countDown(n){
+  while (n >= 0) {
+      console.log(n--)
+  }
 }
+countDown(10)
